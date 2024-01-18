@@ -1,0 +1,22 @@
+{
+  "presets": [
+    "@babel/env",
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime"],
+    [
+      "@babel/plugin-transform-react-jsx",
+      {
+        "pragma": "h",
+        "pragmaFrag": "Fragment"
+      }
+    ]
+  ],
+  "ignore": ["node_modules/**"]
+}
